@@ -55,7 +55,6 @@ function install_spark_notebook {
         rm -f "$SPARK_NOTEBOOK_INSTALL_DIR/spark-notebook-latest"
     fi
     ln -s "$SPARK_NOTEBOOK_INSTALL_DIR/$dirname"  "$SPARK_NOTEBOOK_INSTALL_DIR/spark-notebook-latest"
-    #modify_environment
 }
 
 # Modify User Environment to work with Spark
@@ -91,6 +90,7 @@ function after_install {
 function main {
     pre_install
     install_spark_notebook
+    #modify_environment
     after_install
     create_start_stop_script
     display_info
@@ -308,15 +308,14 @@ function get_file_basename {
 
 function display_info_start_stop_script {
     echo -e "|============================Start/Stop Script has been generated====================================|"
-    if [ "$IS_COPY_SCRIPT_TO_LATEST_REQUIRED" = true ]; then
-        echo -e "| "
-        echo -e "| After applying changes to the enviroment variables you should be able to use following commands:"
-        echo -e "| "
-        echo -e "|        Start Spark Notebook: $(get_file_basename $START_STOP_SCRIPT_NAME) start-notebook"
-        echo -e "|        Stop Spark Notebook:  $(get_file_basename $START_STOP_SCRIPT_NAME) stop-notebook"
-        echo -e "| "
-        echo -e "|====================================================================================================|"
-    fi
+    echo -e "| "
+    echo -e "| After applying changes to the enviroment variables you should be able to use following commands:"
+    echo -e "| "
+    echo -e "|        Start Spark Notebook: $(get_file_basename $START_STOP_SCRIPT_NAME) start-notebook"
+    echo -e "| "
+    echo -e "|        Stop Spark Notebook:  $(get_file_basename $START_STOP_SCRIPT_NAME) stop-notebook"
+    echo -e "| "
+    echo -e "|====================================================================================================|"
 }
 #=============================== INFO =============================
 
