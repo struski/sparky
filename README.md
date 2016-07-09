@@ -18,9 +18,18 @@ Tested on CentOS 7. Use at your own responsibility.
 
 1. Downloads Spark Notebook
 2. Extracts files to /opt/spark-notebook
-3. Adds environment variables to ~/.bash_profile [TODO: REMOVE]
+3. Adds environment variables to ~/.bash_profile 
 4. Adds command to launch Spark Notebook <pre>sparky start-notebook</pre>
 5. Displays some info on usage
+
+## zeppelin_install.sh
+
+1. Downloads Apache Zeppelin
+2. Extracts files to /opt/zeppelin
+3. Adds environment variables to ~/.bash_profile 
+4. Adds command to launch and stop Zeppelin <pre>sparky start-zeppelin</pre> <pre>sparky stop-zeppelin</pre>
+5. Displays some info on usage 
+
 
 ## Notes
 
@@ -32,4 +41,6 @@ This way you can update the version by editing variables at the top of the scrip
 http://spark.apache.org/downloads.html
 
 http://spark-notebook.io
+
+http://zeppelin.apache.org/
 
