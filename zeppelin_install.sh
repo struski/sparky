@@ -3,8 +3,8 @@
 CURRENT_USERNAME=`whoami`
 RUN_DIR=`pwd`
 
-MIRROR_URL="http://ftp.ps.pl/pub/apache/zeppelin/zeppelin-0.6.0/"
-ZEPPELIN_INSTALL_FILENAME="zeppelin-0.6.0-bin-all.tgz"
+MIRROR_URL="http://ftp.ps.pl/pub/apache/zeppelin/zeppelin-0.6.1/"
+ZEPPELIN_INSTALL_FILENAME="zeppelin-0.6.1-bin-all.tgz"
 ZEPPELIN_INSTALL_DIR="/opt"
 
 #Apache Spark Config settings

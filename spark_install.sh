@@ -3,10 +3,10 @@
 CURRENT_USERNAME=`whoami`
 RUN_DIR=`pwd`
 
-MIRROR_URL="http://ftp.ps.pl/pub/apache/spark/spark-1.6.1/"
-CHECKSUM_URL="http://www.apache.org/dist/spark/spark-1.6.1/"
-SPARK_INSTALL_FILENAME="spark-1.6.1-bin-hadoop2.6.tgz"
-SPARK_CHECKSUM_FILENAME="spark-1.6.1-bin-hadoop2.6.tgz.md5"
+MIRROR_URL="http://ftp.ps.pl/pub/apache/spark/spark-2.0.0/"
+CHECKSUM_URL="http://www.apache.org/dist/spark/spark-2.0.0/"
+SPARK_INSTALL_FILENAME="spark-2.0.0-bin-hadoop2.7.tgz"
+SPARK_CHECKSUM_FILENAME="spark-2.0.0-bin-hadoop2.7.tgz.md5"
 SPARK_INSTALL_DIR="/opt"
 
 #Apache Spark Config settings
